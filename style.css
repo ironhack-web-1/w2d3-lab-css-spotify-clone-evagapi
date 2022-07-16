@@ -1,8 +1,5 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
+:root {
+  --text-color-light: #fff;
+  --text-color-dark: #1a1a1a;
+  --main-brand-color: #00b172;
+}
