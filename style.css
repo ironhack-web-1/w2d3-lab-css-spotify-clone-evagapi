@@ -34,3 +34,29 @@ html {
   color: var(--text-color);
   margin: 10px;
 }
+
+.main-text-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+  color: #fff;
+}
+
+.main-heading {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.introduction-text {
+  width: 250px;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 10px;
+}
