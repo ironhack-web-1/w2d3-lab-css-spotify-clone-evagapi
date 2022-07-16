@@ -60,3 +60,50 @@ html {
   line-height: 1.4em;
   font-size: 10px;
 }
+
+.whats-on-spotify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-heading {
+  display: inline;
+  margin: 20px auto 30px;
+  text-align: center;
+  border-bottom: 1.5px solid var(--main-brand-color);
+  padding-bottom: 5px;
+  line-height: 10px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.service-image {
+  height: 40px;
+}
+
+.service-heading {
+  margin: 8px 0 10px;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--main-brand-color);
+}
+
+.service-text {
+  font-size: 0.6em;
+  line-height: 1.4em;
+}
