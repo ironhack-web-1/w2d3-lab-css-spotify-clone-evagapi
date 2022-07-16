@@ -2,3 +2,35 @@
   --text-color: #1a1a1a;
   --main-brand-color: #00b172;
 }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+.logo-and-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.navigation-logo {
+  height: 25px;
+}
+
+.navigation-bar {
+  display: flex;
+  font-size: 0.6em;
+}
+
+.navigation-options {
+  list-style: none;
+  display: flex;
+}
+
+.navigation-item {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 10px;
+}
