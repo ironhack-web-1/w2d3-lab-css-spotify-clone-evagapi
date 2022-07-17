@@ -107,3 +107,70 @@ html {
   font-size: 0.6em;
   line-height: 1.4em;
 }
+
+.functionalities {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-brand-color);
+  background-image: url(/images/spotify-icon-white.png);
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: center;
+  margin: 1rem;
+  padding: 2rem;
+}
+.functionalities:hover {
+  animation: beat 1s infinite;
+}
+
+.functionalities-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.functionalities-heading {
+  display: inline;
+  margin: 0 auto 1.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 0.2rem;
+}
+
+.functionality-heading {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-bottom: 0.9rem;
+}
+
+.functionality-boxes-wrapper {
+  width: 50%;
+}
+
+.functionality-text {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  margin-bottom: 1.2rem;
+  line-height: 0.8rem;
+}
+
+.spotify-app-image {
+  height: 15rem;
+}
+
+@keyframes beat {
+  0% {
+    background-size: 12%;
+  }
+  30% {
+    background-size: 20%;
+  }
+  68%,
+  72% {
+    background-size: 9%;
+  }
+  100% {
+    background-size: 25%;
+  }
+}
