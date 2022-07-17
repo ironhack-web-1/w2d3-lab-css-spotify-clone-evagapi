@@ -112,6 +112,7 @@ html {
 .functionalities {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: var(--main-brand-color);
   background-image: url(/images/spotify-icon-white.png);
   background-repeat: no-repeat;
