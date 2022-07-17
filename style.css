@@ -7,6 +7,8 @@ html {
   font-size: 14px;
   font-family: sans-serif;
   color: var(--text-color);
+  max-width: 760px;
+  margin: auto;
 }
 
 .logo-and-navigation-container {
