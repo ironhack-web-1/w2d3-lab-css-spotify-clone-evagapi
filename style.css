@@ -182,3 +182,16 @@ html {
     background-size: 25%;
   }
 }
+
+@media (max-width: 480px) {
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .spotify-app-image {
+    display: none;
+  }
+  .functionalities {
+    background-image: none;
+  }
+}
