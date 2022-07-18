@@ -132,6 +132,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--main-brand-color);
   background-image: url(/images/spotify-icon-white.png);
   background-repeat: no-repeat;
@@ -140,6 +141,7 @@ html {
   margin: 1rem;
   padding: 2rem;
 }
+
 .functionalities:hover {
   animation: beat 1s infinite;
 }
@@ -218,6 +220,7 @@ html {
     flex-direction: column;
     align-items: center;
   }
+
   .service-box {
     width: 75%;
   }
@@ -229,11 +232,17 @@ html {
   .service-text {
     font-size: var(--font-size-m);
   }
-  .spotify-app-image {
-    display: none;
-  }
+
   .functionalities {
-    background-image: none;
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+    background-position: 50% 96%;
+    background-size: 12%;
+    padding-bottom: 4rem;
+  }
+
+  .functionalities:hover {
+    animation: none;
   }
 
   .functionality-boxes-wrapper {
