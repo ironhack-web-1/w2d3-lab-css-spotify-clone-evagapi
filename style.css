@@ -193,8 +193,11 @@ html {
   72% {
     background-size: 9%;
   }
-  100% {
+  85% {
     background-size: 25%;
+  }
+  100% {
+    background-size: 12%;
   }
 }
 
