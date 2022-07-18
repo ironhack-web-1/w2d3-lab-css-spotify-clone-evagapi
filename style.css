@@ -62,10 +62,10 @@ html {
 }
 
 .introduction-text {
-  width: 250px;
+  margin: 0 12rem;
   text-align: center;
   line-height: 1.4em;
-  font-size: 10px;
+  font-size: 0.6rem;
 }
 
 .whats-on-spotify {
@@ -76,7 +76,7 @@ html {
 
 .services-heading {
   display: inline;
-  margin: 20px auto 30px;
+  margin: 1rem auto 1.5rem;
   text-align: center;
   border-bottom: 1.5px solid var(--main-brand-color);
   padding-bottom: 5px;
@@ -184,6 +184,9 @@ html {
 }
 
 @media (max-width: 480px) {
+  .introduction-text {
+    margin: 0 3rem;
+  }
   .services-wrapper {
     flex-direction: column;
     align-items: center;
