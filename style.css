@@ -1,0 +1,262 @@
+:root {
+  --font-size-l: 2rem;
+  --font-size-m: 0.8rem;
+  --font-size-s: 0.7rem;
+  --font-size-xs: 0.6rem;
+  --text-color: #1a1a1a;
+  --main-brand-color: #00b172;
+}
+
+html {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: var(--text-color);
+  max-width: 760px;
+  margin: auto;
+}
+
+.logo-and-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.navigation-logo {
+  height: 25px;
+}
+
+.navigation-bar {
+  display: flex;
+  font-size: var(--font-size-xs);
+}
+
+.navigation-options {
+  list-style: none;
+  display: flex;
+}
+
+.navigation-item {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.navigation-item:hover {
+  color: var(--main-brand-color);
+}
+
+.main-text-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+  color: #fff;
+}
+
+.main-heading {
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+.introduction-text {
+  width: 40%;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: var(--font-size-xs);
+}
+
+.whats-on-spotify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-heading {
+  display: inline;
+  margin: 1rem auto 1.5rem;
+  text-align: center;
+  border-bottom: 1.5px solid var(--main-brand-color);
+  padding-bottom: 5px;
+  line-height: 10px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.service-image {
+  height: 40px;
+  transition: filter 0.25s, transform 0.25s;
+}
+
+.service-image:hover {
+  transform: scale3d(1.3, 1.3, 1);
+
+  filter: invert(43%) sepia(77%) saturate(1801%) hue-rotate(129deg)
+    brightness(94%) contrast(101%);
+}
+
+.service-heading {
+  margin: 8px 0 10px;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  color: var(--main-brand-color);
+}
+
+.service-text {
+  font-size: var(--font-size-xs);
+  line-height: 1.4em;
+}
+
+.functionalities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-brand-color);
+  background-image: url(/images/spotify-icon-white.png);
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: center;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.functionalities:hover {
+  animation: beat 1s infinite;
+}
+
+.functionalities-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.functionalities-heading {
+  display: inline;
+  margin: 0 auto 1.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 0.2rem;
+}
+
+.functionality-heading {
+  font-size: var(--font-size-m);
+  font-weight: bolder;
+  margin-bottom: 0.9rem;
+}
+
+.functionality-boxes-wrapper {
+  width: 50%;
+}
+
+.functionality-text {
+  font-size: var(--font-size-xs);
+  font-weight: lighter;
+  margin-bottom: 1.2rem;
+  line-height: 0.8rem;
+}
+
+.spotify-app-image {
+  height: 15rem;
+}
+
+@keyframes beat {
+  0% {
+    background-size: 12%;
+  }
+  30% {
+    background-size: 20%;
+  }
+  68%,
+  72% {
+    background-size: 9%;
+  }
+  85% {
+    background-size: 25%;
+  }
+  100% {
+    background-size: 12%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-item {
+    font-size: var(--font-size-s);
+  }
+  .main-text-wrapper {
+    padding: 0.5rem;
+  }
+  .introduction-text {
+    width: 80%;
+    font-size: var(--font-size-m);
+    margin: 0 1rem;
+  }
+
+  .services-heading {
+    margin: 1.5rem auto 1rem;
+    font-size: 1.2rem;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 75%;
+  }
+
+  .service-heading {
+    font-size: 1rem;
+  }
+
+  .service-text {
+    font-size: var(--font-size-m);
+  }
+
+  .functionalities {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+    background-position: 50% 96%;
+    background-size: 12%;
+    padding-bottom: 4rem;
+  }
+
+  .functionalities:hover {
+    animation: none;
+  }
+
+  .functionality-boxes-wrapper {
+    width: 100%;
+  }
+
+  .functionality-heading {
+    font-size: 1rem;
+  }
+
+  .functionality-text {
+    font-size: var(--font-size-s);
+  }
+}
